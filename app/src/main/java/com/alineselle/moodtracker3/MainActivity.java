@@ -24,5 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
         int[] imagesIdsForMinusButton = {R.drawable.smiley_disappointed,
                 R.drawable.smiley_sad};
+
+        int[] backgroundSadColors = {R.color.warm_grey,
+                R.color.faded_red};
+        int[]backgroundHappyColors = {R.color.cornflower_blue_65
+                ,R.color.light_sage,
+                R.color.banana_yellow};
     }
 }
