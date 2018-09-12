@@ -2,4 +2,7 @@
     <string name="app_name">MoodTracker3</string>
     <string name="history_image">History Image</string>
     <string name="comment_image">Comment Image</string>
+    <string name="happy_image">Happy_Image</string>
+    <string name="plus_button">+</string>
+    <string name="minus_Button">-</string>
 </resources>
