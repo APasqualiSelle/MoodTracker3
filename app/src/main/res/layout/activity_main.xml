@@ -2,12 +2,38 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_sage"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewMoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Mood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/smiley_happy" />
+
+    <TextView
+
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <Button
-        android:id="@+id/imageComment"
+        android:id="@+id/buttonComment"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginBottom="40dp"
@@ -15,7 +41,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/ic_comment_black_48px"
+        android:background="@drawable/ic_note_add_black"
         android:contentDescription="@string/comment_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,24 +62,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.742"
-        app:layout_constraintStart_toEndOf="@+id/imageComment" />
-
-    <ImageView
-        android:id="@+id/imageViewHappy"
-        android:contentDescription="@string/happy_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/smiley_happy" />
+        app:layout_constraintStart_toEndOf="@+id/buttonComment"
+        tools:ignore="UnknownId" />
 
     <Button
         android:id="@+id/plus_button"
@@ -84,6 +94,8 @@
         android:textSize="@android:dimen/notification_large_icon_width"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 </android.support.constraint.ConstraintLayout>
