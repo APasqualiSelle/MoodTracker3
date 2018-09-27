@@ -5,7 +5,7 @@
     <string name="happy_image">Happy_Image</string>
     <string name="plus_button">+</string>
     <string name="minus_Button">-</string>
-    <string name="commentaire">Commentaire</string>
-    <string name="annulerButton">Annuler</string>
-    <string name="valider">Valider</string>
+    <string name="commentaire">Comment</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="valid">Valid</string>
 </resources>
