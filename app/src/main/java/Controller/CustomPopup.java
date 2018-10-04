@@ -1,9 +1,11 @@
-package com.alineselle.moodtracker3;
+package Controller;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.alineselle.moodtracker3.R;
 
 public class CustomPopup extends Dialog {
 
