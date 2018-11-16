@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_sage"
-    tools:context="Controller.MainActivity">
+    tools:context="com.alineselle.moodtracker3.controller.MainActivity">
 
     <ImageView
         android:id="@+id/imageViewMoods"
@@ -65,7 +65,7 @@
         app:layout_constraintStart_toEndOf="@+id/buttonComment"
         tools:ignore="UnknownId" />
 
-    <Button
+   <!-- <Button
         android:id="@+id/plus_button"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -94,7 +94,7 @@
         android:textSize="@android:dimen/notification_large_icon_width"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+-->
 
 
 

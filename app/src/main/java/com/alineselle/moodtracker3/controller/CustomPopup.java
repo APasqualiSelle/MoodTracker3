@@ -1,4 +1,4 @@
-package Controller;
+package com.alineselle.moodtracker3.controller;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -42,6 +42,5 @@ public class CustomPopup extends Dialog {
     public void build(){
 
         show();
-
-}
+    }
 }

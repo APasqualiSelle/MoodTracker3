@@ -1,79 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Controller.MoodHistory">
+    tools:context="com.alineselle.moodtracker3.controller.MoodHistory">
 
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="551dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_marginBottom="8dp">
 
-        <TextView
+        <!--<TextView
             android:id="@+id/commentText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
 
-            />
-
+            />-->
 
         <ImageView
-            android:id="@+id/chosenMoodColor1"
+            android:id="@+id/chosenColorAWeekAgo"
+            android:layout_width="383dp"
+            android:layout_height="51dp"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/chosenColor6DaysAgo"
             android:layout_width="383dp"
             android:layout_height="50dp"
-            android:background="@color/light_sage" />
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/chosenColor5DaysAgo"
+            android:layout_width="383dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/chosenColor4DaysAgo"
+            android:layout_width="383dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/chosenColor3DaysAgo"
+            android:layout_width="383dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/chosenColor2DaysAgo"
+            android:layout_width="383dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/chosenColorYesterday"
+            android:layout_width="383dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent" />
+
+        //For making a line
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />-->
 
 
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />-->
     </TableLayout>
 
     <Button
-        android:id="@+id/Transparent_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/buttonClear"
+        android:layout_width="101dp"
+        android:layout_height="84dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/Comment_imageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="392dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049"
+        android:background="@drawable/smiley_happy"
+        android:text="@string/clear" />
+
+    <Button
+        android:id="@+id/Comment_btnYesterday"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="319dp"
+        android:background="@drawable/ic_comment_black_48px" />
+
+    <Button
+        android:id="@+id/Comment_btn2DaysAgo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_comment_black_48px" />
+
+    <Button
+        android:id="@+id/Comment_btn3DaysAgo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="215dp"
+        android:background="@drawable/ic_comment_black_48px" />
+
+    <Button
+        android:id="@+id/Comment_btn4DaysAgo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/ic_comment_black_48px" />
+
+    <Button
+        android:id="@+id/Comment_btn5DaysAgo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="116dp"
         android:background="@drawable/ic_comment_black_48px" />
 
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/Comment_btn6DaysAgo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/tableLayout"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="-116dp"
+        android:background="@drawable/ic_comment_black_48px" />
+
+    <Button
+        android:id="@+id/CommentBtnAWeekAgo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/tableLayout"
+        android:layout_alignEnd="@+id/tableLayout"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/ic_comment_black_48px" />
+
+    <Button
+        android:id="@+id/pieChartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonClear"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="15dp"
+        android:text="Pie Chart" />
+
+    <TextView
+        android:id="@+id/textViewYesterday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="219dp"
+        android:text="Yesterday" />
+
+    <TextView
+        android:id="@+id/textView2DaysAgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewYesterday"
+        android:layout_centerVertical="true"
+        android:text="2 days ago"
+        android:layout_alignRight="@+id/textViewYesterday" />
+
+    <TextView
+        android:id="@+id/textView3DaysAgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewYesterday"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="224dp"
+        android:text="3 days ago"
+        android:layout_alignRight="@+id/textViewYesterday" />
+
+    <TextView
+        android:id="@+id/textView4DaysAgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="176dp"
+        android:text="4 days ago" />
+
+    <TextView
+        android:id="@+id/textView5DaysAgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewYesterday"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="128dp"
+        android:text="5 days ago"
+        android:layout_alignRight="@+id/textViewYesterday" />
+
+    <TextView
+        android:id="@+id/textView6DaysAgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewYesterday"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="74dp"
+        android:text="6 days ago"
+        android:layout_alignRight="@+id/textViewYesterday" />
+
+    <TextView
+        android:id="@+id/textViewAWeekAgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewYesterday"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="A week ago"
+        android:layout_alignRight="@+id/textViewYesterday" />
+
+
+</RelativeLayout>

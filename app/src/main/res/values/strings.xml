@@ -8,4 +8,6 @@
     <string name="commentaire">Comment</string>
     <string name="cancelButton">Cancel</string>
     <string name="valid">Valid</string>
+    <string name="clear">clear!</string>
+    <string name="weeklyMoodPieChart">Weekly Mood Pie Chart</string>
 </resources>
